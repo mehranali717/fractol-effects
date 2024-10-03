@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lora", serif;
+}
+
+h1,
+h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: var(--fill-base-white);
+    text-decoration: none !important;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #373737;
+}
+
+:root {
+    --fill-base-white: #fff;
+    --fill-base-yellow: #ffbf00;
+    --fill-transparent-grey: #1E1C1F75;
+    --fill-primary-black: #3C373D;
+    --fill-base-grey: #F3F5F5;
+}
+
+.default-btn {
+    align-self: self-start;
+    background-color: var(--fill-base-yellow);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.2;
+    border: 1px solid transparent;
+}
+
+.default-btn:hover {
+    border: 1px solid var(--fill-base-yellow);
+    background-color: transparent;
+    color: var(--fill-base-yellow);
+}
+
+/* header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(#965004, #693702, #640101);
+    z-index: 99999;
+}
+
+.container {
+    max-width: 1310px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    max-width: 198px;
+    padding: 25px;
+    margin: 0;
+    color: var(--fill-base-white) !important;
+    font-weight: bold;
+    font-size: 32px !important;
+    font-style: italic;
+    line-height: 1;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 22.5px;
+}
+
+.nav-item a {
+    padding: 8px 0 !important;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+    border-bottom: 2px solid var(--fill-base-yellow);
+}
+
+.nav-link {
+    color: var(--fill-base-white) !important;
+    fill: var(--fill-base-white) !important;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+}
+
+header .default-btn {
+    color: var(--fill-base-white);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-left: 22.5px;
+}
